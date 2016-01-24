@@ -5,13 +5,12 @@
   <title>Loan Application</title>
 </head>
 <body>
+<form>
 
 <!-- applicant info -->
-<section>
-<form>
   <table class="info">
   <p>
-  <label for="info">Applicant Information</label>
+  <h3>Applicant Information</h3>
     <tr>
       <td>Applicant First Name</td>
       <td><input type="text" name="first_name"></td>
@@ -40,15 +39,13 @@
       <td>Employer Address</td>
       <td><input type="text" name="employer_address"></td>
     </tr>
-    </p>
+  </p>
   </table>
-</section>
 
 <!-- loan type -->
-<section>
   <table class="loan_type">
     <p>
-    <label for="loan_type">Loan Type</label>
+    <h3>Loan Type</h3>
     <tr>
       <td><input type="radio" name="loan_type">Commercial</td>
       <td><input type="radio" name="loan_type">Real Estate</td>
@@ -59,43 +56,37 @@
     </tr>
     </p>
   </table>
-</section>
 
 <!-- loan amount -->
-<section>
   <table class="loan_amount">
-  <p>
-  <label for="loan_amount">Loan Amount</label>
-  <tr>
-    <td><input type="text" name="amount"></td>
-  </tr>
-  </p>
+    <p>
+    <h3>Loan Amount</h3>
+    <tr>
+      <td><input type="text" name="amount"></td>
+    </tr>
+    </p>
   </table>
-</section>
 
 <!-- loan length -->
-<section>
   <table class="loan_length">
   <p>
-  <label for="loan_length">Loan Length</label>
-  <tr>
-    <td><input type="radio" name="loan_length">5 years</td>
-  </tr>
-  <tr>
-    <td><input type="radio" name="loan_length">15 years</td>
-  </tr>
-  <tr>
-    <td><input type="radio" name="loan_length">30 years</td>
-  </tr>
+  <h3>Loan Length</h3>
+    <tr>
+      <td><input type="radio" name="loan_length">5 years</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="loan_length">15 years</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="loan_length">30 years</td>
+    </tr>
   </p>
   </table>
-</section>
 
 <!-- Checkbox group for special conditions -->
-<section>
 <table class="special">
 <p>
-<label for="special">Special Conditions</label>
+<h3>Special Conditions</h3>
   <tr>
     <td><input type="checkbox" name="special">I have a down payment.</td>
   </tr>
@@ -110,20 +101,18 @@
   </tr>
 </p>
 </table>
-</section>
 
 
 <!-- A text area to allow for additional comments -->
 <p>
-  <label for="comments">Additional Comments</label><br>
+  <h3>Additional Comments</h3>
   <textarea class="comments"></textarea>
 </p>
 
 <!-- contact information -->
-<section>
   <table class="contact">
   <p>
-  <label for="contact">Contact Information</label>
+  <h3>Contact Information</h3>
     <tr>
       <td>Applicant Email Address</td>
       <td><input type="text" name="email"></td>
@@ -138,7 +127,6 @@
     </tr>
   </p>
   </table>
-</section>
 </form>
 
 <button type="submit">Submit</button>
